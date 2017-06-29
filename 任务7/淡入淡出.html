@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn1">fadein</button>
+<button id="btn2">fadeOut</button>
+<button id="btn3">toggle</button>
+<button id="btn4">fadeTo</button>
+<div id="div1" style="display:none;width: 80px;height: 80px;background: #ffff00"></div>
+<div id="div2" style="display:none;width: 80px;height: 80px;background: #00ff00"></div>
+<div id="div3" style="display:none;width: 80px;height: 80px;background: #ff0000"></div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+   $('#btn1').on('click',function () {
+       $('#div1').fadeIn(1000);
+       $('#div2').fadeIn(1000);
+       $('#div3').fadeIn(1000);
+   })
+    $('#btn2').on('click',function () {
+        $('#div1').fadeOut(1000);
+        $('#div2').fadeOut(1000);
+        $('#div3').fadeOut(1000);
+    })
+    $('#btn3').on('click',function () {
+        $('#div1').fadeToggle(1000);
+        $('#div2').fadeToggle(1000);
+        $('#div3').fadeToggle(1000);
+    })
+    $('#btn4').on('click',function () {
+        $('#div1').fadeTo(1000,0.2);
+        $('#div2').fadeTo(1000,0.4);
+        $('#div3').fadeTo(1000,0.9);
+    })
+});
+</script>
+</body>
+</html>

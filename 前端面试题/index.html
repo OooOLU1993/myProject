@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB高级前端工程师面试题</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="webstyle.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="4_html5_9ab5f1c-w351.png" width="20px">
+            </a>
+        </div>
+       <a class="navbar-brand" href="#">WEB高级前端工程师面试</a>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, web Engineer</h1>
+        <p>WEB高级前端工程师面试题详解</p>
+        <p>天道酬勤</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+    <div class="panel panel-success">
+        <div class="panel-heading">position的值， relative和absolute分别是相对于谁进行定位的？</div>
+        <div class="panel-body">
+            absolute :生成绝对定位的元素， 相对于最近一级的 定位不是 static 的父元素来进行定位;<br>
+            fixed （老IE不支持）生成绝对定位的元素，通常相对于浏览器窗口或 frame 进行定位;<br>
+            relative 生成相对定位的元素，相对于其在普通流中的位置进行定位;<br>
+            static 默认值。没有定位，元素出现在正常的流中;<br>
+            sticky 生成粘性定位的元素，容器的位置根据正常文档流计算得出;
+        </div>
+    </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">创建ajax过程</div>
+            <div class="panel-body">
+                (1)创建XMLHttpRequest对象,也就是创建一个异步调用对象.<br>
+                (2)创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.<br>
+                (3)设置响应HTTP请求状态变化的函数.<br>
+                (4)发送HTTP请求.<br>
+                (5)获取异步调用返回的数据.<br>
+                (6)使用JavaScript和DOM实现局部刷新.<br>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">HTTP和HTTPS </div>
+            <div class="panel-body">
+                HTTP 协议通常承载于TCP协议之上，在 HTTP 和 TCP 之间添加一个安全协议层（ SSL 或 TSL ），这个时候，就成了我们常说的HTTPS。
+                默认HTTP的端口号为80， HTTPS 的端口号为443。
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">对前端模块化的认识</div>
+            <div class="panel-body">
+                AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>
+                CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。<br>
+                AMD 是提前执行， CMD 是延迟执行。<br>
+                AMD 推荐的风格通过返回一个对象做为模块对象， CommonJS 的风格通过对 module.exports 或 exports 的属性赋值来达到暴露模块对象的目的。
+                CMD模块方式<br>
+                define(function(require, exports, module) {<br>
+                // 模块代码<br>
+                });
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">你觉得前端工程的价值体现在哪</div>
+            <div class="panel-body">
+                为简化用户使用提供技术支持（交互部分）<br>
+
+                为多个浏览器兼容性提供支持<br>
+
+                为提高用户浏览速度（浏览器性能）提供支持<br>
+
+                为跨平台或者其他基于webkit或其他渲染引擎的应用提供支持<br>
+
+                为展示数据提供支持（数据接口）
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">谈谈性能优化问题</div>
+            <div class="panel-body">
+                代码层面：避免使用css表达式，避免使用高级选择器，通配选择器。<br>
+
+                缓存利用：缓存Ajax，使用CDN，使用外部js和css文件以便缓存，添加Expires头，服务端配置Etag，减少DNS查找等<br>
+
+                请求数量：合并样式和脚本，使用css图片精灵，初始首屏之外的图片资源按需加载，静态资源延迟加载.<br>
+
+
+                请求带宽：压缩文件，开启GZIP，
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">ES6的了解</div>
+            <div class="panel-body">
+                新增模板字符串（为JavaScript提供了简单的字符串插值功能）、箭头函数（操作符左边为输入的参数，而右边则是进行的操作以及返回的值 Inputs=>outputs 。）、for-of （用来遍历数据—例如数组中的值。） arguments 对象可被不定参数和默认参数完美代替。 ES6 将 promise 对象纳入规范，提供了原生的 Promise 对象。增加了 let 和 const 命令，用来声明变量。增加了块级作用域。let命令实际上就增加了块级作用域。ES6规定， var 命令和 function 命令声明的全局变量，属于全局对象的属性； let 命令、 const 命令、 class 命令声明的全局变量，不属于全局对象的属性。。还有就是引入 module 模块的概念
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">谈谈浮动和清除浮动</div>
+            <div class="panel-body">
+                浮动的框可以向左或向右移动，直到他的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">用过哪些设计模式？</div>
+            <div class="panel-body">
+                工厂模式：<br>
+                主要好处就是可以消除对象间的耦合，通过使用工程方法而不是new关键字。将所有实例化的代码集中在一个位置防止代码重复。<br>
+                工厂模式解决了重复实例化的问题 ，但还有一个问题,那就是识别问题，因为根本无法 搞清楚他们到底是哪个对象的实例。<br>
+
+
+                function createObject(name,age,profession){//集中实例化的函数var obj = new Object();<br>
+                obj.name = name;<br>
+                obj.age = age;<br>
+                obj.profession = profession;<br>
+                obj.move = function () {<br>
+                return this.name + ' at ' + this.age + ' engaged in ' + this.profession;<br>
+                };<br>
+                return obj;<br>
+                }<br>
+                var test1 = createObject('trigkit4',22,'programmer');//第一个实例var test2 = createObject('mike',25,'engineer');//第二个实例
+
+
+                <br>构造函数模式<br>
+
+
+
+                使用构造函数的方法 ，即解决了重复实例化的问题 ，又解决了对象识别的问题，该模式与工厂模式的不同之处在于：
+
+
+
+                <br>1.构造函数方法没有显示的创建对象 (new Object());<br>
+
+                2.直接将属性和方法赋值给 this 对象;<br>
+
+                3.没有 renturn 语句。
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">说说你对闭包的理解</div>
+            <div class="panel-body">
+                使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。在js中，函数即闭包，只有函数才会产生作用域的概念
+                闭包有三个特性：<br>
+                1.函数嵌套函数<br>
+                2.函数内部可以引用外部的参数和变量<br>
+                3.参数和变量不会被垃圾回收机制回收<br>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">浏览器本地存储</div>
+            <div class="panel-body">
+                在较高版本的浏览器中， js 提供了 sessionStorage 和 globalStorage 。在HTML5 中提供了 localStorage 来取代 globalStorage 。<br>
+                html5 中的 Web Storage 包括了两种存储方式： sessionStorage 和 localStorage 。<br>
+                sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此 sessionStorage 不是一种持久化的本地存储，仅仅是会话级别的存储。<br>
+                而 localStorage 用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。<br>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">说说你对语义化的理解？</div>
+            <div class="panel-body">
+                1，去掉或者丢失样式的时候能够让页面呈现出清晰的结构<br>
+
+                2，有利于SEO：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；<br>
+
+                3，方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以意义的方式来渲染网页；<br>
+
+                4，便于团队开发和维护，语义化更具可读性，是下一步吧网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化。
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">new操作符具体干了什么呢?</div>
+            <div class="panel-body">
+
+                1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+
+                2、属性和方法被加入到 this 引用的对象中。
+
+                3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">哪些操作会造成内存泄漏？</div>
+            <div class="panel-body">
+                内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。<br>
+
+                垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。<br>
+
+
+
+                setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。<br>
+
+                闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">你如何对网站的文件和资源进行优化?期待的解决方案包括：</div>
+            <div class="panel-body">
+                文件合并<br>
+                文件最小化/文件压缩<br>
+                使用CDN托管<br>
+                缓存的使用<br>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</div>
+            <div class="panel-body">
+                分为4个步骤：<br>
+
+                （1），当发送一个URL请求时，不管这个URL是Web页面的URL还是Web页面上每个资源的URL，浏览器都会开启一个线程来处理这个请求，同时在远程DNS服务器上启动一个DNS查询。这能使浏览器获得请求对应的IP地址。<br>
+
+                （2）， 浏览器与远程`Web`服务器通过`TCP`三次握手协商来建立一个`TCP/IP`连接。该握手包括一个同步报文，一个同步-应答报文和一个应答报文，这三个报文在 浏览器和服务器之间传递。该握手首先由客户端尝试建立起通信，而后服务器应答并接受客户端的请求，最后由客户端发出该请求已经被接受的报文。<br>
+
+                （3），一旦`TCP/IP`连接建立，浏览器会通过该连接向远程服务器发送`HTTP`的`GET`请求。远程服务器找到资源并使用HTTP响应返回该资源，值为200的HTTP响应状态表示一个正确的响应。<br>
+
+                （4），此时，`Web`服务器提供资源服务，客户端开始下载资源。<br>
+
+
+
+                请求返回后，便进入了我们关注的前端模块<br>
+
+                简单来说，浏览器会解析`HTML`生成`DOM Tree`，其次会根据CSS生成CSS Rule Tree，而`javascript`又可以根据`DOM API`操作`DOM`
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">请解释什么是事件代理</div>
+            <div class="panel-body">
+                事件代理（Event Delegation），又称之为事件委托。是 JavaScript 中常用绑定事件的常用技巧。顾名思义，“事件代理”即是把原本需要绑定的事件委托给父元素，让父元素担当事件监听的职务。事件代理的原理是 DOM 元素的事件冒泡。使用事件代理的好处是可以提高性能。
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

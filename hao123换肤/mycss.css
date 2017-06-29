@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*换皮肤*/
+#select{
+    width: 1000px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skin{
+    width: 200px;
+    height: 90px;
+    float: left;
+    margin-left: 50px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 90px;
+}
+#skinblue{
+    background-color: #026ed0;
+}
+#skinRed{
+    background-color: #f54b53;
+}
+#skinyellow{
+    background-color: #f5df4b;
+}
+#skingreen{
+    background-color: #63f54b;
+}
+.wrapper{
+    background: #fafafb;
+    height: 1000px;
+}
+.topBar{
+    width: 1000px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.logo{
+    width: 180px;
+    height: 60px;
+}
+.topBarList{
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    color: #aeabab;
+    font-size: 14px;
+
+}
+.topBarList a{
+    text-decoration: none;
+    color: #aeabab;
+}
+.topBarList li{
+    float: left;
+    margin-left: 20px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+.topBarList li:hover{
+    background-color: #f7f7f7;
+}
+#dateWeather{
+    width: 350px;
+    height: 60px;
+}
+#user{
+    width: 370px;
+    height: 60px;
+    left: 630px;
+}
+/*搜索*/
+.search{
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+#inpute_search{
+    height: 45px;
+    width: 540px;
+    border: 1px solid #666666;
+    font-size: 35px;
+    padding-left: 5px;
+    float: left;
+    position: relative;
+}
+#buttonSubmit{
+    height: 47px;
+    width: 120px;
+    border: 1px solid #666666;
+    float: left;
+    border-left: none;
+}
+.search .logo{
+    float: left;
+}
+.navigation{
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #099e6a;
+}
+.navigation a{
+    color: black;
+}
+.navigation li{
+    float: left;
+    list-style-type: none;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.navigation li:hover{
+    color: #099e6a;
+}
+#navigationListIndex li{
+    background: #099e6a;
+    color: #ffffff;
+}
+#navigationList2 li:hover{
+    color: red;
+}
+#navigationList2{
+    font-size: 14px;
+
+}
+/*左侧导航*/
+.container{
+    width: 1000px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navLeft{
+    width: 278px;
+    height: 800px;
+    border: 1px solid #aeabab;
+    float: left;
+
+}
+.navRight1{
+    width: 708px;
+    height: 230px;
+    border: 1px solid #aeabab;
+    margin-left: 10px;
+    float: left;
+}
+.navRight2{
+    width: 708px;
+    height: 180px;
+    border: 1px solid #aeabab;
+    margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+}

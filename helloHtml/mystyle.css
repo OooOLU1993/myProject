@@ -1,0 +1,31 @@
+
+div#all{
+    width: 100%;
+    height: 1000px;
+    background-color: crimson;
+    margin: 0px;
+}
+div#top{
+    width: 100%;
+    height: 10%;
+    background-color: #dcd10a;
+}
+div#left{
+    width: 30%;
+    height: 80%;
+    background-color: #dc5c58;
+    float: left;
+}
+div#right{
+    width: 70%;
+    height: 80%;
+    background-color: #b61ddc;
+    float: left;
+}
+div#foot{
+    width: 100%;
+    height: 10%;
+    background-color: #1332ff;
+    clear: both;
+
+}

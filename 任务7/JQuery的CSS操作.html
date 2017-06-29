@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="JQueryStyle.css">
+</head>
+<body>
+<div></div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+//        $('div').css('width','100px');
+//        $('div').css('height','100px');
+//        $('div').css('background','#ff0000');
+//        $('div').on('click',function () {
+//            $('div').css({
+//                width:'120px',height:'120px',background:'#ff00ff'
+//            })
+//        })
+        $('div').toggleClass('style');
+        $('div').click(function () {
+            $(this).toggleClass('style2');
+//            $('div').removeClass('style2');
+        })
+
+    });
+</script>
+</body>
+</html>

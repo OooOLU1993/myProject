@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link type="text/css" href="mystyle.css" rel="stylesheet">
+    <script type="text/javascript" src="myjs.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <form name="calculator" action="" method="get">
+        <div class="result">
+            <input type="text" name="numScreen" id="numScreen" class="screen" value="0"onfocus="this.blur();"/>
+        </div>
+        <div class="key">
+            <div class="function" id="delete" onclick="_return()">AC</div>
+            <div class="function" id="takeBack" onclick="invert()">+/-</div>
+            <div class="function" id="percentage" onclick="persent()">%</div>
+            <div class="function" id="division" onclick="divide()">/</div>
+            <div class="num" onclick="inputeNum(7)">7</div>
+            <div class="num"  onclick="inputeNum(8)" >8</div>
+            <div class="num"  onclick="inputeNum(9)" >9</div>
+            <div class="function" id="multiply" onclick="times()">*</div>
+            <div class="num"  onclick="inputeNum(4)" >4</div>
+            <div class="num"  onclick="inputeNum(5)" >5</div>
+            <div class="num"  onclick="inputeNum(6)" >6</div>
+            <div class="function"  onclick="plus()">+</div>
+            <div class="num"  onclick="inputeNum(1)" >1</div>
+            <div class="num"  onclick="inputeNum(2)" >2</div>
+            <div class="num"  onclick="inputeNum(3)" >3</div>
+            <div class="function" onclick="minus()">-</div>
+            <div class="num"  id="num0" onclick="inputeNum(0)">0</div>
+            <div class="num" onclick="dot()">.</div>
+            <div class="function"  onclick="jisuan()">=</div>
+        </div>
+        </form>
+        <span id="note"></span>
+    </div>
+
+
+</div>
+</body>
+</html>

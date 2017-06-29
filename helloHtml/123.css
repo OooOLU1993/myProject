@@ -1,0 +1,27 @@
+h1{
+
+    color: blue;
+}
+
+
+#nama{
+
+    font-family: 微软雅黑;
+
+}
+
+a:link{
+    color: #dcd10a;
+    text-decoration: none;
+
+}
+a:visited{
+    color: #000000;
+    text-decoration: none;
+
+}
+a:hover{
+    color: #1332ff;
+    text-decoration: none;
+
+}

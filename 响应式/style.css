@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.left{
+    float: left;
+    width: 20%;
+    background-color: aquamarine;
+    height: 500px;
+ }
+.middle{
+    float: left;
+    height: 800px;
+    width: 55%;
+    background-color: blueviolet;
+    margin: 0 5px;
+}
+.right{
+    float: left;
+    height: 500px;
+    width: 20%;
+    background-color: brown;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+@media screen and (min-width: 400px) and (max-width: 1024px){
+        .right{
+            display: none;
+        }
+    .middle{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 400px){
+    .right{
+        height: 180px;
+        width: 98%;
+    }
+    .middle{
+        height: 180px;
+        width: 98%;
+        margin: 5px 0 5px 0;
+    }
+    .left{
+        height: 180px;
+        width: 98%;
+    }
+}

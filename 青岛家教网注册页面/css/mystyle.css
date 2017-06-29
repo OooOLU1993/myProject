@@ -1,0 +1,62 @@
+body{
+    background-color: #0d7792;
+    margin: 0px;
+    padding: 0px;
+
+}
+/*外层主容器样式*/
+.content{
+    background-color: white;
+    width: 700px;
+    height: 2650px;
+    border-radius:30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+/*顶部样式*/
+.top{
+    height: 76px;
+    width: 700px;
+}
+.logo{
+
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    width: 180px;
+    height: 76px;
+}
+.nav{
+    float: right;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+.nav a{
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+    font-size: 12px;
+}
+/*表格样式*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse
+}
+tbody{
+    font-size: 13px;
+}
+
+caption{
+    font-size: 20px;
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+/*底部提交按钮样式*/
+.button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

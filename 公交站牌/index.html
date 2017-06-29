@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公交站牌</title>
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="less.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="num">619</div>
+        <div class=" seposition">
+            <div class="start">
+                <div class="startcn">焦庄桥北</div>
+                <div class="starten">JIAOZHUANGQIAOBEI</div>
+            </div>
+            <div class="to">——</div>
+            <div class="end">
+                <div class="endcn">北京站东</div>
+                <div class="enden">BEIJINZHANDONG</div>
+            </div>
+
+        </div>
+        <div class="sdTime">
+            首车:05:00  末车:22:00
+        </div>
+        <div class="thisposition">东坝中街</div>
+        <div class="eachposition">
+            <ul>
+                <li>焦庄桥北</li>
+                <li>东坝建材城</li>
+                <li>铁十六局东站</li>
+                <li>铁十六局</li>
+                <li>奥林匹克公园</li>
+                <li>平房</li>
+                <li>平房西</li>
+                <li>朝阳公园西</li>
+                <li>焦庄桥北</li>
+                <li>铁十六局</li>
+                <li>奥林匹克公园</li>
+                <li>平房</li>
+                <li>平房西</li>
+                <li>朝阳公园西</li>
+                <li>焦庄桥北</li>
+                <li>平房</li>
+                <li>平房西</li>
+                <li>朝阳公园西</li>
+                <li>焦庄桥北</li>
+                <li>铁十六局</li>
+                <li>奥林匹克公园</li>
+                <li>平房</li>
+                <li>平房西</li>
+                <li>朝阳公园西</li>
+                <li>北京站东</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var ulheight =250;
+        var temp;
+        $('.eachposition ul li').each(function (index,item) {
+            var positionlength = $(this).html().length;
+            temp = (ulheight-positionlength*30)/(positionlength-1);
+            $(this).css('letter-spacing',temp+'px');
+        })
+
+    })
+
+</script>
+</body>
+</html>

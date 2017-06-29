@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="mycss.css">
+
+</head>
+<body>
+<div id="changeSkin">
+</div>
+<div class="wrapper"id="wrapper">
+    <div class="topBar">
+        <div class="logo">
+            <a href="http://www.hao123.com">
+                <img src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/richanglogo168_24.png">
+            </a>
+            <ul class="topBarList" id="dateWeather">
+                <a href="#"><li>上海</li></a>
+                <a href="#"><li>4月12日 星期三</li></a>
+                <a href="#"><li>星座运势</li></a>
+            </ul>
+            <ul class="topBarList" id="user">
+                <a href="#"><li>登录</li></a>
+                <a href="#"><li>网盘</li></a>
+                <a href="#"><li>邮箱</li></a>
+                <a href="#"> <li>手机版</li></a>
+                <a href="#" onclick="changeSkin();"><li>换肤</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="search">
+        <div class="logo">
+            <a href="http://www.baidu.com/">
+                <img src="https://gss2.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/her/static/indexher/container/module/search/searchlogo.dd56f38.png" alt="bd_logo"/></a></div>
+        <form action="https://www.baidu.com/s" method="get" >
+            <!--搜索框-->
+                <label for="inpute_search">
+                    <input type="text" id="inpute_search">
+                </label>
+                <button id="buttonSubmit" type="submit">百度一下</button>
+        </form>
+    </div>
+    <div class="navigation">
+        <ul class="navigationList" id="navigationList">
+            <a href="#" id="navigationListIndex"><li>首页</li></a>
+            <a href="#"><li>电视剧</li></a>
+            <a href="#"><li>最新电影</li></a>
+            <a href="#"><li>新闻头条</li></a>
+            <a href="#"><li>八卦娱乐</li></a>
+            <a href="#"><li>军事热点</li></a>
+            <a href="#"><li>热门游戏</li></a>
+            <a href="#"><li>小游戏</li></a>
+            <a href="#"><li>今日特价</li></a>
+            <a href="#"><li>特价旅游</li></a>
+        </ul>
+        <ul class="navigationList" id="navigationList2">
+            <a href="#" ><li>权威推荐</li></a>
+            <a href="#"><li>人民网</li></a>
+            <a href="#"><li>新华网</li></a>
+            <a href="#"><li>央视网</li></a>
+            <a href="#"><li>国际在线</li></a>
+            <a href="#"><li>中国日报网</li></a>
+            <a href="#"><li>中国网</li></a>
+            <a href="#"><li>中国经济网</li></a>
+            <a href="#"><li>光明网</li></a>
+            <a href="#"><li>央广网</li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="navLeft">
+
+        </div>
+        <div class="navRight1">
+
+        </div>
+        <div class="navRight2">
+
+        </div>
+        <div class="navRight3">
+
+        </div>
+        <div class="navRight4">
+
+        </div>
+        <div class="navRight5">
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    function changeSkin(){
+        document.getElementById('changeSkin').outerHTML=
+            "<div id='select'>" +
+            "<div class='skin' id='skinRed' onclick=change('red'); value=red;>点击切换为红皮肤</div>" +
+            "<div class='skin' id='skinblue' onclick=change('blue'); value=blue;>点击切换为蓝皮肤</div> " +
+            "<div class='skin' id='skingreen' onclick=change('green'); value=green;>点击切换为绿皮肤</div> " +
+            "<div class='skin' id='skinyellow' onclick=change('yellow'); value=yellow;>点击切换为黄皮肤</div>" +
+            "</div>";
+    }
+    var color;
+    var webskin;
+    function change(color) {
+        if (color == 'red') {
+            document.getElementById("wrapper").style.background ="#f54b53" ;
+            localStorage.setItem("bgcolor", "#f54b53");//记录皮肤颜色
+            location.reload();
+        } else if (color == 'blue') {
+            document.getElementById("wrapper").style.background = "#026ed0";
+            localStorage.setItem("bgcolor", "#026ed0");
+            location.reload();
+        } else if (color == 'yellow') {
+            document.getElementById("wrapper").style.background = "#f5df4b";
+            localStorage.setItem("bgcolor", "#f5df4b");//记录皮肤颜色
+            location.reload();
+
+        } else if (color == 'green') {
+            localStorage.setItem("bgcolor", "#63f54b");//记录皮肤颜色
+            location.reload();
+        }
+    }
+       document.getElementById("wrapper").style.background =localStorage.getItem("bgcolor");
+//    localStorage.getItem(key):获取指定key本地存储的值
+//    localStorage.setItem(key,value)：将value存储到key字段
+//    localStorage.removeItem(key):删除指定key本地存储的值
+</script>
+
+</body>
+
+</html>

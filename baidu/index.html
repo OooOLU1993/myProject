@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下,你就知道</title>
+    <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+    <!-[if ie]>
+    <script src="./JS/html5.js" type="text/javascript"></script>
+    <![end if]->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--引入JQuery-->
+    <script type="text/javascript" src="./JS/myjs.js"></script>
+</head>
+<body>
+<div class="myskin"></div>
+<div class="wrapper">
+    <div id="changeSkin">
+        <ul class="selectSkin">
+            <li class="changeSkinTabIn">热门</li>
+            <li>游戏</li>
+            <li>卡通</li>
+            <li>女神降临</li>
+            <li>明星</li>
+            <li>风景</li>
+            <li>简约</li>
+            <input type="button" value="确定" id="sure">
+            <input type="button" value="取消" id="cancle">
+        </ul>
+        <div class="skinClass skinShow">
+            <div class="skinPreview">
+                <div class="imgBig img12"></div>
+                <div class="imgBig img11"></div>
+                <div class="imgSMALL img1"></div>
+                <div class="imgSMALL img2"></div>
+                <div class="imgSMALL img3"></div>
+                <div class="imgSMALL img4"></div>
+                <div class="imgSMALL img5"></div>
+                <div class="imgSMALL img6"></div>
+                <div class="imgSMALL img7"></div>
+                <div class="imgSMALL img8"></div>
+                <div class="imgSMALL img9"></div>
+                <div class="imgSMALL img10"></div>
+            </div>
+            <div class="bgskin"><div class="selectSkinPreview"></div></div>
+        </div>
+        <div class="skinClass">
+            <div class="skinPreview">
+                <div class="imgBig img24"></div>
+                <div class="imgBig img23"></div>
+                <div class="imgSMALL img13"></div>
+                <div class="imgSMALL img14"></div>
+                <div class="imgSMALL img15"></div>
+                <div class="imgSMALL img16"></div>
+                <div class="imgSMALL img17"></div>
+                <div class="imgSMALL img18"></div>
+                <div class="imgSMALL img19"></div>
+                <div class="imgSMALL img20"></div>
+                <div class="imgSMALL img21"></div>
+                <div class="imgSMALL img22"></div>
+            </div>
+            <div class="bgskin"><div class="selectSkinPreview"></div></div>
+        </div>
+        <div class="skinClass">
+            卡通皮肤，时间关系不一一去做了
+        </div>
+        <div class="skinClass">
+            女神降临皮肤，时间关系不一一去做了
+        </div>
+        <div class="skinClass">
+            明星皮肤，时间关系不一一去做了
+        </div>
+        <div class="skinClass">
+            风景皮肤，时间关系不一一去做了
+        </div>
+        <div class="skinClass">
+            简约皮肤，时间关系不一一去做了
+        </div>
+    </div>
+    <!--外层容器-->
+       <div class="nav">
+           <div class="nav_left">
+               <ul class="nav_left_menu">
+                   <li class="weatherP">上海：<img src="./img/Sun_32px_1198774_easyicon.net.png">20℃ <img src="./img/img2.png"> 61</li>
+                   <li>丨</li>
+                   <a href="#"><li class="nav_left_menu_item">宝箱</li></a>
+                   <a href="#" onclick="changeSkin()"><li class="nav_left_menu_item" >换肤</li></a>
+                   <a href="#"><li class="nav_left_menu_item">消息</li></a>
+               </ul>
+           </div>
+           <div class="nav_right">
+               <ul class="nav_right_menu">
+                   <li class="nav_menu_item"><a href="http://www.nuomi.com/?cid=002540"><strong>糯米</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://news.baidu.com/"><strong>新闻</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://www.hao123.com/"><strong>hao123</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://map.baidu.com/"><strong>地图</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://map.baidu.com/"><strong>地图</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://v.baidu.com/"><strong>视频</strong></a></li>
+                   <li class="nav_menu_item"><a href="http://tieba.baidu.com/"><strong>贴吧</strong></a></li>
+                   <li class="nav_menu_item"><a href="#">登录</a></li>
+                   <li class="nav_menu_item"><a href="javascript:">设置</a></li>
+                   <li class="nav_menu_item" id="item_more_class"><a id="item_more">更多产品</a></li>
+               </ul>
+           </div>
+           <div id="more_menu">
+                   <ul class="nav_submenu">        <!--更多产品弹出菜单-->
+                       <li class="nav_submenu_item nav_submenu_item_more">更多产品<hr></li>
+                       <li class="nav_submenu_item"><a href="#"><span class="nav_submenu_item_icon1"></span>音乐<hr></a></li>
+                       <li class="nav_submenu_item"><a href="#"><span class="nav_submenu_item_icon2"></span>图片<hr></a></li>
+                       <li class="nav_submenu_item"><a href="#"><span class="nav_submenu_item_icon3"></span>知道<hr></a></li>
+                       <li class="nav_submenu_item"><a href="#"><span class="nav_submenu_item_icon4"></span>文库<hr></a></li>
+                       <li class="nav_submenu_item"><a href="#"><span class="nav_submenu_item_icon5"></span>风云榜<hr></a></li>
+                       <li class="nav_submenu_item"><a href="#">全部产品>></a></li>
+                   </ul>
+                    </div>
+   </div>
+    <div class="weather">
+    <div class="weatherDate">
+        <ul>
+            <li>04月25日</li>
+            <li>农历三月廿十九</li>
+            <li>未来七天天气</li>
+        </ul>
+    </div>
+        <div class="weatherList">
+           <div class="dateList">
+               <span>今天（周二）</span>
+               <img src="img/Sun_weather_64.png">
+               <span>24℃阵雨转中雨</span>
+               <span>东南风微风</span>
+           </div>
+            <div class="dateList">
+                <span>明天（周三）</span>
+                <img src="img/Raining_weather.png">
+                <span>24℃阵雨转中雨</span>
+                <span>东南风微风</span>
+            </div>
+            <div class="dateList">
+                <span>后天（周四）</span>
+                <img src="img/Cloudy_weather_.png">
+                <span>24℃阵雨转中雨</span>
+                <span>东南风微风</span>
+            </div>
+            <div class="dateList">
+                <span>周五</span>
+                <img src="img/Sun_weather_64.png">
+                <span>24℃阵雨转中雨</span>
+                <span>东南风微风</span>
+            </div>
+            <div class="dateList">
+                <span>周六</span>
+                <img src="img/Sunny_Rain_weat.png">
+                <span>24℃阵雨转中雨</span>
+                <span>东南风微风</span>
+            </div>
+        </div>
+    </div>
+    <!--头部导航-->
+    <div class="content">                                                          <!--主体LOGO+搜索-->
+        <div class="logo"><img src="img/bd_logo1.png" alt="bd_logo"/></div>
+        <form action="https://www.baidu.com/s" method="get" >
+            <div class="search">                                                    <!--搜索框+上传图片icon父级容器-->
+                <div class="icon_camera"><a href="#"><img src="img/camera.png" style="height: 20px;width: 25px"/></a></div>
+                <label for="inpute_search"><input type="text" id="inpute_search" name="word"></label>
+                <button type="submit">百度一下</button>
+            </div>
+        </form>
+        <div class="recommend">
+            <div class="tabPageBox">
+            <ul class="tabPage">
+                <li class="tabIn">我的关注</li>
+                <li>推荐</li>
+                <li>视频</li>
+                <li>购物</li>
+                <li>体育</li>
+                <li>小说</li>
+                <li>导航</li>
+            </ul>
+            </div>
+            <div class="recommend_content contentShow">
+                <div class="myFollow myFollowNav">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的导航(7)</span>
+                </div>
+                <div class="myNav">
+                    <ul class="webNav">
+                        <a href="http://www.qq.com" target="_blank"><li>腾讯网</li></a>
+                        <a href="http://www.taobao.com" target="_blank"><li>淘宝</li></a>
+                        <a href="http://www.zhiboba.com" target="_blank"><li>直播吧</li></a>
+                        <a href="http://www.jd.com" target="_blank"><li>京东商城</li></a>
+                        <a href="http://map.baidu.com" target="_blank"><li>百度地图</li></a>
+                        <a href="http://www.sina.com.cn" target="_blank"><li>新浪</li></a>
+                        <a href="http://www.163.com" target="_blank"><li>网易</li></a>
+                    </ul>
+                </div>
+                <div class="myFollow"><span>
+                    <img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的星座()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的小说()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的股票()</span>
+                </div>
+
+            </div>
+            <div class="recommend_content">
+                <span style="color: red">长内容，测试返回顶部</span>
+                <div class="myFollow myFollowNav">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的导航(7)</span>
+                </div>
+                <div class="myNav">
+                    <ul class="webNav">
+                        <a href="http://www.qq.com" target="_blank"><li>腾讯网</li></a>
+                        <a href="http://www.taobao.com" target="_blank"><li>淘宝</li></a>
+                        <a href="http://www.zhiboba.com" target="_blank"><li>直播吧</li></a>
+                        <a href="http://www.jd.com" target="_blank"><li>京东商城</li></a>
+                        <a href="http://map.baidu.com" target="_blank"><li>百度地图</li></a>
+                        <a href="http://www.sina.com.cn" target="_blank"><li>新浪</li></a>
+                        <a href="http://www.163.com" target="_blank"><li>网易</li></a>
+                    </ul>
+                </div>
+                <div class="myFollow"><span>
+                    <img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的星座()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的小说()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的股票()</span>
+                </div>
+                <div class="myFollow myFollowNav">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的导航(7)</span>
+                </div>
+                <div class="myNav">
+                    <ul class="webNav">
+                        <a href="http://www.qq.com" target="_blank"><li>腾讯网</li></a>
+                        <a href="http://www.taobao.com" target="_blank"><li>淘宝</li></a>
+                        <a href="http://www.zhiboba.com" target="_blank"><li>直播吧</li></a>
+                        <a href="http://www.jd.com" target="_blank"><li>京东商城</li></a>
+                        <a href="http://map.baidu.com" target="_blank"><li>百度地图</li></a>
+                        <a href="http://www.sina.com.cn" target="_blank"><li>新浪</li></a>
+                        <a href="http://www.163.com" target="_blank"><li>网易</li></a>
+                    </ul>
+                </div>
+                <div class="myFollow"><span>
+                    <img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的星座()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的小说()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的股票()</span>
+                </div>
+                <div class="myFollow myFollowNav">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的导航(7)</span>
+                </div>
+                <div class="myNav">
+                    <ul class="webNav">
+                        <a href="http://www.qq.com" target="_blank"><li>腾讯网</li></a>
+                        <a href="http://www.taobao.com" target="_blank"><li>淘宝</li></a>
+                        <a href="http://www.zhiboba.com" target="_blank"><li>直播吧</li></a>
+                        <a href="http://www.jd.com" target="_blank"><li>京东商城</li></a>
+                        <a href="http://map.baidu.com" target="_blank"><li>百度地图</li></a>
+                        <a href="http://www.sina.com.cn" target="_blank"><li>新浪</li></a>
+                        <a href="http://www.163.com" target="_blank"><li>网易</li></a>
+                    </ul>
+                </div>
+                <div class="myFollow"><span>
+                    <img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的星座()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的小说()</span>
+                </div>
+                <div class="myFollow">
+                    <span><img src="img/triangle_right.png" style="width: 5px;height: 11px"> 我的股票()</span>
+                </div>
+            </div>
+            <div class="recommend_content">
+                内容3，时间关系，这一块没有按照百度首页还原
+            </div>
+            <div class="recommend_content">
+                内容4，时间关系，这一块没有按照百度首页还原
+            </div>
+            <div class="recommend_content">
+                内容5，时间关系，这一块没有按照百度首页还原
+            </div>
+            <div class="recommend_content">
+                内容6，时间关系，这一块没有按照百度首页还原
+            </div>
+            <div class="recommend_content">
+                内容7，时间关系，这一块没有按照百度首页还原
+            </div>
+        </div>
+    </div>              <!--中部搜索区-->
+    <div class="foot">
+        <div class="baidu_mobile"><img src="img/mobile_baidu.png"><strong>手机百度</strong></div>
+        <p>
+            <a href="" class="foota">把百度设为主页</a>
+            <a href="" class="foota">关于百度</a>
+            <a href="" class="foota">About Baidu</a>
+            <a href="" class="foota">百度推广</a>
+        </p>
+        <span>&copy;2017 Baidu</span>
+        <span><a href=""class="foota">使用百度前必读</a></span>
+        <span><a href=""class="foota">意见反馈</a></span>
+        <span>京ICP证030173号</span>
+    </div>
+    <!--底部版权区-->
+    <div class="comeBack">
+
+
+</div>
+</div>
+</body>
+</html>

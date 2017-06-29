@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery基本操作</title>
+
+</head>
+<body>
+<div class="test">
+    <p>123456</p>
+    <a href="http://www.baidu.com" id="aid">这是一个超链接：百度</a>
+    <input type="button" value="Click Me" class="btn">
+    <input type="button" value="Click Me" class="btn2">
+</div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+//    alert($);
+//    $(document).ready(function () {
+//        $('p').click(function () {
+//            $(this).hide();
+//        })
+//    })
+        $(document).ready(function () {
+//            $('.btn').click(function () {
+//                $('p').text('321');
+//                alert("text:"+$('p').text());
+//                    $('#aid').text('这是一个超链接：QQ');
+//                    $('#aid').attr({
+//                        "href":"http://www.qq.com",
+//                        "title":"123456"
+//                    });
+//            $('.btn').bind('click',clicker);
+//              $('p').hide(1000);
+//        })
+//            $('.btn2').click(function () {
+//                $('p').show(1000);
+//            })
+//    function clicker() {
+//
+//    }
+//        $('#aid').attr(function () {
+//            "href":"http://www.qq.com";
+            $('.btn').click(function () {
+                $('p').toggle(1000);
+            })
+        })
+
+</script>
+</body>
+</html>

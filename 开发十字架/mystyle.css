@@ -1,0 +1,58 @@
+/*容器样式*/
+.container{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -160px;
+}
+.sec-line{
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*色块样式*/
+div{
+    width: 100px;
+    height: 100px;
+}
+.first{
+    background-color: coral;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px deeppink;
+}
+.second{
+    background-color: blueviolet;
+    float: left;
+    box-shadow: 5px 5px 5px deeppink;
+}
+.third{
+    background-color: crimson;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px deeppink;
+}
+.fourth{
+    background-color: dodgerblue;
+    float: left;
+    box-shadow: 5px 5px 5px deeppink;
+}
+.fifth{
+    background-color: forestgreen;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px deeppink;
+}
+.image{
+   line-height: 100px;
+}
+img{
+    height: 64px;
+    width: 64px;
+    vertical-align: middle;
+}
