@@ -1,0 +1,22 @@
+body{
+    font-size: 15px;
+    font-family: Arial;
+    background-color: cornsilk;
+}
+/*表格*/
+table{
+
+    margin: auto;
+    border-collapse:collapse;
+}
+.jktable{
+    margin-top: 200px;
+}
+td{
+    text-align: center;
+}
+caption{
+    font-size: larger;
+    font-family: 黑体;
+    margin-bottom: 20px;
+}
